@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main .container {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main .container .disc {
+  width: calc(20% - 20px);
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: #5a5a5a;
+}
+
+main .container .disc img {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+main .container .disc div {
+  margin-bottom: 5px;
+}
+
+nav {
+  height: 70px;
+  background-color: lightblue;
+}
+
