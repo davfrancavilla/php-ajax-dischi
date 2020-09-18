@@ -6,7 +6,11 @@ $(document).ready(function(){
     allDiscs();
 
     $("nav li").click(function(){
-        filteredDiscs($(this).text());
+        if ($(this).text() == "TUTTI"){
+            allDiscs();
+        } else {
+            filteredDiscs($(this).text());
+        } 
     })
 
     // funzione che mostra tutti i dischi
