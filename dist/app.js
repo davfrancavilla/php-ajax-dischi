@@ -99,6 +99,7 @@ $(document).ready(function () {
   allDiscs();
   $("nav li").click(function () {
     if ($(this).text() == "TUTTI") {
+      $(".discs").empty();
       allDiscs();
     } else {
       filteredDiscs($(this).text());
