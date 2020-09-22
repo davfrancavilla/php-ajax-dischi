@@ -108,7 +108,7 @@ $(document).ready(function () {
 
   function allDiscs() {
     $.ajax({
-      url: "http://localhost:8888/46-18-09/esercizio/php-ajax-dischi/db.php",
+      url: "http://localhost:8888/46-18-09/esercizio/php-ajax-dischi/server.php",
       method: "GET",
       success: function success(element) {
         for (i in element) {
@@ -132,7 +132,7 @@ $(document).ready(function () {
   function filteredDiscs(name) {
     $(".discs").empty();
     $.ajax({
-      url: "http://localhost:8888/46-18-09/esercizio/php-ajax-dischi/db.php",
+      url: "http://localhost:8888/46-18-09/esercizio/php-ajax-dischi/server.php",
       method: "GET",
       success: function success(element) {
         for (i in element) {
